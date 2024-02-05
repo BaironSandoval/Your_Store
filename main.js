@@ -1,4 +1,4 @@
-const baseUrl = "https://ecommercebackend.fundamentos-29.repl.co/";
+const baseUrl = "https://services-academlo-shopping.onrender.com/";
 const cartToggle = document.querySelector(".cart__toggle");
 const cartBlock = document.querySelector(".cart__block");
 const productsList = document.querySelector("#products-container");
