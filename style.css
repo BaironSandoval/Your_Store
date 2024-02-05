@@ -33,12 +33,13 @@ nav button i {
   transition: 0.5s;
 }
 nav button i:hover {
+  color: rgba(255, 0, 0, 0.877);
   font-size: 26px;
   transform: rotate(-15deg) translateX(5px);
 }
 header {
-  height: 350px;
-  background-color: #1f1f1f;
+  height: 260px;
+  background-color: #1f1f1f81;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,9 +85,7 @@ main h3 {
   border-radius: 20px;
 }
 .product__container:hover {
-  transform: translateY(-10px);
-
-  background-color: #43434318;
+  background-color: #9886ff18;
 }
 .product__container__img img {
   max-width: 290px;
@@ -141,8 +140,9 @@ main h3 {
 }
 .cart__button:hover,
 .product__details:hover {
-  transform: scale(0.9);
-  box-shadow: 2px 2px 8px 0px rgba(67, 67, 67, 0.568);
+  background-color: transparent;
+  border: 1px solid #1f1f1f;
+  color: #1f1f1f;
 }
 
 .cart__product__image {
@@ -218,13 +218,12 @@ main h3 {
   display: flex;
   justify-content: flex-end;
   color: #434343;
-  font-size: 24px;
-  margin: 10px 20px;
+  font-size: 2rem;
   transition: 0.5s;
   cursor: pointer;
 }
 .modal__container__element div i:hover {
-  font-size: 21px;
+  color: rgba(255, 0, 0, 0.932);
 }
 .show__modal {
   display: block;
@@ -242,9 +241,7 @@ main h3 {
 .product__detail__price {
   font-weight: bold;
   font-size: 20px;
-}
-.product__detail__description {
-  margin: 0px 50px;
+  color: rgba(255, 0, 0, 0.904);
 }
 .product__container__description {
   display: none;
@@ -255,23 +252,42 @@ main h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  width: 80%;
+}
+.characteristics p {
+  width: fit-content;
+}
+.container-img_sizes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .size {
+  width: 50px;
+  height: 50px;
   display: flex;
-  gap: 10px;
-  margin: 1.8rem;
+  gap: 5px;
   flex-wrap: wrap;
 }
 .size div {
-  border: 1px solid #1f1f1f;
-  width: 50px;
+  background-color: rgba(255, 0, 0, 0.493);
+  width: 22px;
+  height: 25px;
+  font-size: 0.8rem;
   border-radius: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 5px 5px 1px #43434385;
 }
+.show__modal {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .cart__block {
     width: 70%;

@@ -171,22 +171,11 @@ function modalInfoElements() {
     const div = document.createElement("div");
     div.innerHTML = `
       <div class="product__detail">
-      <div>
+      <div class="container-img_sizes">
         <div class="product__detail__image">
           <img src="${product.image}">
         </div>
-      </div>
-      <div class="characteristics">
-        <div class="product__detail__name">
-          <p>${product.name}</p>
-        </div>
-        <div class="product__detail__price">
-          <p>Price: ${product.price}</p>
-        </div>
-        <div class="product__detail__description">
-          <p>Description: ${product.description}</p>
-        </div>
-          <div class="size">
+        <div class="size">
             <div>
               <p>S</p>
             </div>
@@ -206,6 +195,18 @@ function modalInfoElements() {
               <p>3XL</p>
             </div>
           </div>
+      </div>
+      <div class="characteristics">
+        <div class="product__detail__name">
+          <p>${product.name}</p>
+        </div>
+        <div class="product__detail__price">
+          <p>${product.price}</p>
+        </div>
+        <div class="product__detail__description">
+          <p>${product.description}</p>
+        </div>
+          
         </div>
       </div>
     `;
